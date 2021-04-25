@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: archive
 title:  "Deep Learning from Scratch1 - Ch3 활성화함수 정리"
 ---
 
