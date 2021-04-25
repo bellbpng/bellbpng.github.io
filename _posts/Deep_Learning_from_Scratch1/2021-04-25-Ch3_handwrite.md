@@ -1,3 +1,8 @@
+---
+layout: single
+title:  "Deep Learning from Scratch1 - Ch3 손글씨 숫자 처리"
+---
+
 # 손글씨 숫자 분류
 - MNIST 데이터셋에서 손글씨 숫자 이미지를 보고 분류하는 추론 과정 구현
 - 훈련 이미지 60,000장 시험 이미지 10,000장
