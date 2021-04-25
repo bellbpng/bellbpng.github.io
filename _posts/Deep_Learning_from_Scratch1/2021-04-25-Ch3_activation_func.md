@@ -1,3 +1,8 @@
+---
+layout: single
+title:  "Deep Learning from Scratch1 - Ch3 활성화함수 정리"
+---
+
 # 활성화 함수(activation function)
 - 입력신호의 총합을 출력신호로 변환하는 함수
 - 입력신호의 총합이 활성화를 일으키는지를 정하는 함수
