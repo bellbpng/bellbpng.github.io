@@ -4,7 +4,7 @@ title:  "Deep Learning from Scratch1 - Ch3 손글씨 숫자 처리"
 excerpt: "손글씨 숫자 처리 분석"
 
 categories:
-  - ML
+  - Deep Learning
 tags:
   - [ML, Python]
 

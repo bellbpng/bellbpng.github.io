@@ -4,7 +4,7 @@ title:  "Deep Learning from Scratch1 - Ch3 활성화함수 정리"
 excerpt: "은닉층의 활성화함수 정리"
 
 categories:
-  - ML
+  - Deep Learning
 tags:
   - [ML, Python]
 

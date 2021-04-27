@@ -4,7 +4,7 @@ title:  "Deep Learning from Scratch1 - Ch4 손실함수 정리"
 excerpt: "손실함수 구현과 미니배치"
 
 categories:
-  - ML
+  - Deep Learning
 tags:
   - [ML, Python]
 
