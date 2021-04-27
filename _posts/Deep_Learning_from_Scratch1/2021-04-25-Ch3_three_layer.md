@@ -1,6 +1,15 @@
 ---
 layout: single
 title:  "Deep Learning from Scratch1 - Ch3 3층 신경망 구현"
+excerpt: "코드로 이해하는 3층 신경망"
+
+categories:
+  - ML
+tags:
+  - [ML, Python]
+
+toc: true
+toc_sticky: true
 ---
 
 # 3층 신경망에서 수행되는 순방향 처리(입력부터 출력까지) 구현

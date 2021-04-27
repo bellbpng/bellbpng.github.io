@@ -1,6 +1,15 @@
 ---
 layout: single
 title:  "Deep Learning from Scratch1 - Ch3 손글씨 숫자 처리"
+excerpt: "손글씨 숫자 처리 분석"
+
+categories:
+  - ML
+tags:
+  - [ML, Python]
+
+toc: true
+toc_sticky: true
 ---
 
 # 손글씨 숫자 분류

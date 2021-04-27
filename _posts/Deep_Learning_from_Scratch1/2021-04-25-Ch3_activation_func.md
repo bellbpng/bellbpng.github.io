@@ -1,6 +1,15 @@
 ---
-layout: archive
+layout: single
 title:  "Deep Learning from Scratch1 - Ch3 활성화함수 정리"
+excerpt: "은닉층의 활성화함수 정리"
+
+categories:
+  - ML
+tags:
+  - [ML, Python]
+
+toc: true
+toc_sticky: true
 ---
 
 # 활성화 함수(activation function)
