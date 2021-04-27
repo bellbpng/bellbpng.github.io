@@ -4,7 +4,7 @@ title:  "Deep Learning from Scratch1 - Ch4 경사하강법"
 excerpt: "수치미분을 활용한 경사하강법"
 
 categories:
-  - Deep Learning
+  - Deep Learning from Scratch1
 tags:
   - [ML, Python]
 

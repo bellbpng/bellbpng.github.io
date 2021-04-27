@@ -4,7 +4,7 @@ title:  "Deep Learning from Scratch1 - Ch3 3층 신경망 구현"
 excerpt: "코드로 이해하는 3층 신경망"
 
 categories:
-  - Deep Learning
+  - Deep Learning from Scratch1
 tags:
   - [ML, Python]
 
