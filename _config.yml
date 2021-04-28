@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "BoKyoung"
   avatar           : "https://user-images.githubusercontent.com/59792046/115998160-f97fd200-a620-11eb-9046-a9992a72e6c5.jpg"
-  bio              : "I'm interested in Robotics & AI🔥 #C/C++ #Python #ML #AI💻"
+  bio              : "Welcome!!<br>I'm interested in Robotics & AI🔥<br>#C/C++ #Python #ML #AI💻"
   location         : "Seoul, South Korea"
   email            : "bellbpng@naver.com"
   links:
@@ -282,3 +282,11 @@ defaults:
       related: true
       mathjax: true
       sidebar_main: true
+
+   # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
