@@ -5,8 +5,8 @@ excerpt: "은닉층의 활성화함수 정리"
 
 categories:
   - Deep Learning from Scratch1
-tags:
-  - [ML, Python]
+# tags:
+#   - [ML, Python]
 
 toc: true
 toc_sticky: true

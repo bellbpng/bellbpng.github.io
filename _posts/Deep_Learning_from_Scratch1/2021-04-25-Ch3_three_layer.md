@@ -5,8 +5,8 @@ excerpt: "코드로 이해하는 3층 신경망"
 
 categories:
   - Deep Learning from Scratch1
-tags:
-  - [ML, Python]
+# tags:
+#   - [ML, Python]
 
 toc: true
 toc_sticky: true

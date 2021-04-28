@@ -5,8 +5,8 @@ excerpt: "수치미분을 활용한 경사하강법"
 
 categories:
   - Deep Learning from Scratch1
-tags:
-  - [ML, Python]
+# tags:
+#   - [ML, Python]
 
 toc: true
 toc_sticky: true
@@ -87,6 +87,6 @@ def function_2(x):
 
 ### [참고자료]
 - 밑바닥부터 시작하는 딥러닝
-- range와 enumerate 함수: https://wikidocs.net/20792
+- [range와 enumerate 함수](https://wikidocs.net/20792)
 - 혼자 공부하는 파이썬
 

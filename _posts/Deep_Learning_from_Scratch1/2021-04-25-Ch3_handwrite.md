@@ -5,8 +5,8 @@ excerpt: "손글씨 숫자 처리 분석"
 
 categories:
   - Deep Learning from Scratch1
-tags:
-  - [ML, Python]
+# tags:
+#   - [ML, Python]
 
 toc: true
 toc_sticky: true
@@ -180,6 +180,6 @@ print("Accuracy: " + str(float(accuracy_cnt)/len(x)))
 
 #### [참고자료]
 - 밑바닥부터 시작하는 딥러닝
-- [python] 파이썬 pickle 피클 활용법 https://korbillgates.tistory.com/173
+- [[python] 파이썬 pickle 피클 활용법](https://korbillgates.tistory.com/173)
 
 

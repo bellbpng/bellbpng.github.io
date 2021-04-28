@@ -5,8 +5,8 @@ excerpt: "손실함수 구현과 미니배치"
 
 categories:
   - Deep Learning from Scratch1
-tags:
-  - [ML, Python]
+# tags:
+#   - [ML, Python]
 
 toc: true
 toc_sticky: true
@@ -121,7 +121,7 @@ np.log(y[np.arange(batch_size_entropy), t])에 대한 설명
 
 ### [참고자료]
 - 밑바닥부터 시작하는 딥러닝
-- Numpy 난수 생성(Random 모듈) https://codetorial.net/numpy/random.html
-- (파이썬) numpy.arange - 코딩 연습 https://codepractice.tistory.com/88
-- NumPy(넘파이)에서의 indexing  https://kongdols-room.tistory.com/58
+- [Numpy 난수 생성(Random 모듈)](https://codetorial.net/numpy/random.html)
+- [(파이썬) numpy.arange - 코딩 연습](https://codepractice.tistory.com/88)
+- [NumPy(넘파이)에서의 indexing](https://kongdols-room.tistory.com/58)
 
