@@ -1,6 +1,6 @@
 ---
 title: "밑바닥부터 시작하는 딥러닝1"
-layout: single
+layout: archive
 permalink: /categories/deeplearning_1
 author_profile: true
 sidebar_main: true
