@@ -33,8 +33,8 @@
         <span class="nav__sub-title">C/C++</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/algorithm" class="">알고리즘 구현 (with C++) ({{category[1].size}})</a></li>
+                    {% if category[0] == "C language" %}
+                        <li><a href="/categories/c_basic" class="">C언어 기초 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
