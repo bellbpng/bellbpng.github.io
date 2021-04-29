@@ -19,7 +19,7 @@
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
                     {% if category[0] == "Deep Learning from Scratch1" %}
-                        <li><a href="/categories/#deep-learning-from-scratch1" class="">Deep Learning from Scratch1 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/deeplearning_1" class="">Deep Learning from Scratch1 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
