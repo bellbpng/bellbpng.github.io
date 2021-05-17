@@ -1,7 +1,7 @@
 ---
 layout: single
-title:  "Deep Learning from Scratch1 - Ch6 가중치 초깃값"
-excerpt: "가중치 초깃값에 따른 활성화값 분포"
+title:  "Deep Learning from Scratch1 - Ch6 배치정규화 알고리즘"
+excerpt: "배치정규화(Batch Normalization)"
 
 categories:
   - Deep Learning from Scratch1
