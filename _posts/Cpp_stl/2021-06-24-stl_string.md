@@ -53,5 +53,6 @@ string str3(str2);
 - str.length(): 문자열의 길이를 반환. size() 함수와 같다.
 - str.erase(index, count): str[index]부터 count개 문자를 지운다.
 - str.compare(string&str2): 매개변수로 들어온 str2와 비교해서 같으면 0, str이 str2보다 사전순으로 빠르면 -1, 그렇지 않으면 +1 반환
+- str.find("sub", start index): 부분문자열을 찾는 함수. 해당 문자열을 발견하면 첫번째 인덱스를 반환한다. 해당 문자열이 없다면 string::npos 를 반환한다.
 
 
