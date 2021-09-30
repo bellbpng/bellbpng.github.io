@@ -1,7 +1,7 @@
 ---
-title: "Arduino Starter kit"
+title: "Arduino"
 layout: archive
-permalink: /categories/arduino_starter_kit
+permalink: /categories/arduino
 author_profile: true
 sidebar_main: true
 ---

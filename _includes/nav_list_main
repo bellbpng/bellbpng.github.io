@@ -64,7 +64,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Arduino" %}
-                        <li><a href="/categories/arduino_starter_kit" class="">Arduino Starter Kit ({{category[1].size}})</a></li>
+                        <li><a href="/categories/arduino" class="">Arduino ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
