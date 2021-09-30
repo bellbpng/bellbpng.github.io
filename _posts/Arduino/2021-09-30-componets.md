@@ -17,11 +17,11 @@ toc_sticky: true
 # Arduino Starter Kit
 - 아두이노 스타터 키트의 구성품을 알아봅시다!
 
-<img src="https://user-images.githubusercontent.com/59792046/135444530-4f5faff1-18da-4b11-b91f-b60ba2401b0a.jpg" width = "500">
+<img src="https://user-images.githubusercontent.com/59792046/135444530-4f5faff1-18da-4b11-b91f-b60ba2401b0a.jpg" width = "1000">
 
-<img src="https://user-images.githubusercontent.com/59792046/135444537-bd0c85fd-3bf7-4a34-88bc-50baab93aeb5.jpg" width = "500">
+<img src="https://user-images.githubusercontent.com/59792046/135444537-bd0c85fd-3bf7-4a34-88bc-50baab93aeb5.jpg" width = "1000">
 
-<img src="https://user-images.githubusercontent.com/59792046/135445173-2eaa0edb-9f1f-4e7a-9edb-57dab6c96eb2.jpg" width = "500">
+<img src="https://user-images.githubusercontent.com/59792046/135445173-2eaa0edb-9f1f-4e7a-9edb-57dab6c96eb2.jpg" width = "1000">
 
 ## Arduino Starter Kit datasheet
 - datasheet를 통해 구성품을 문서로 확인할 수 있습니다.
@@ -29,9 +29,9 @@ toc_sticky: true
 - go to [Datasheet](https://cdn-reichelt.de/documents/datenblatt/A300/ARDUINO_STARTER.pdf)
 
 ## Arduino Uno
-<img src="https://user-images.githubusercontent.com/59792046/135448183-df064d86-c4ec-4389-864a-8080f1bd7499.png" width = 500>
+<img src="https://user-images.githubusercontent.com/59792046/135448183-df064d86-c4ec-4389-864a-8080f1bd7499.png" width = 1000>
 
-<img src="https://user-images.githubusercontent.com/59792046/135447830-4dbde767-ce0e-4241-934f-6d9464d093d5.PNG" width = 500>
+<img src="https://user-images.githubusercontent.com/59792046/135447830-4dbde767-ce0e-4241-934f-6d9464d093d5.PNG" width = 1000>
 
 - 마이크로컨트롤러로는 ATmega328P 라는 AVR 8-bit가 사용되었고, 이에 대한 datasheet 또한 첨부하였다. (go to [Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061A.pdf))
 
