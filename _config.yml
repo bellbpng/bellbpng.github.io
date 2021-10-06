@@ -117,7 +117,7 @@ author:
       url: "https://github.com/bellbpng"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/bokyoung_dev"
+      # url: "https://instagram.com/bokyoung_dev"
 
 # Site Footer
 footer:
