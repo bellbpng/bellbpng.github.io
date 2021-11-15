@@ -1,4 +1,4 @@
-<!-- ---
+---
 layout: single
 title:  "Arduino starter kit 구성품"
 excerpt: "components of Arduino starter kit"
@@ -11,8 +11,6 @@ categories:
 toc: true
 toc_sticky: true
 ---
-# Introduction
-- 현재(2021-2학기) 오스트리아 인스부르크로 교환학생을 와있는데, 같이 수업듣는 현지 학생이 Electronics, Embedded Software 에 관심이 많은 친구입니다. 이번에 같이 프로젝트를 진행하게 되어서 함께 연구실에서 다양한 업무를 보고 있는데, 관심있으면 공부해보라고 아두이노 키트를 선뜻 주었습니다. 적절한 시기에 좋은 기회가 될 것 같아 독학하는 내용을 블로그에 기록해놓을 생각입니다. 
 
 # Arduino Starter Kit
 - 아두이노 스타터 키트의 구성품을 알아봅시다!
@@ -66,4 +64,4 @@ toc_sticky: true
 
 ### ICSP(In Circuit Serial Programming)
 - MCU에 직접 프로그래밍 가능한 통신포트이다.
-- SPI 통신을 사용한다.  -->
+- SPI 통신을 사용한다. 
