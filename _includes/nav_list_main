@@ -53,7 +53,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <span class="nav__sub-title">Exchange semester at MCI(2021 fall)</span>
+            <span class="nav__sub-title">Exchange semester(2021 fall)</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Image Reconstruction" %}
