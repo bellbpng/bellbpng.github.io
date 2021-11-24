@@ -53,10 +53,32 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <span class="nav__sub-title">Exchange semester at MCI(2021 fall)</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Programmers" %}
-                        <li><a href="/categories/programmers" class="">프로그래머스 ({{category[1].size}})</a></li>
+                    {% if category[0] == "Image Reconstruction" %}
+                        <li><a href="/categories/image_reconstruction" class="">Image Reconstruction ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Processing & Stimulation of Biosignals" %}
+                        <li><a href="/categories/processing_biosignal" class="">Processing & Stimulation of Biosignals ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "IT-aided Procedures in Operative Medicine" %}
+                        <li><a href="/categories/it_aided" class="">IT-aided Procedures in Operative Medicine ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Biomimetic Hand Project" %}
+                        <li><a href="/categories/hand_project" class="">Biomimetic Hand Project ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
