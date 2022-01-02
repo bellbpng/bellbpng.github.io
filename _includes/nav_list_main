@@ -30,7 +30,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">C/C++</span>
+        <span class="nav__sub-title">Programming</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "C language" %}
@@ -45,7 +45,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <span class="nav__sub-title">Alogrithm & Coding Test</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Baekjoon Solution" %}
@@ -53,40 +52,11 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <span class="nav__sub-title">Exchange semester(2021 fall)</span>
+            <span class="nav__sub-title">Computer Vision</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Image Reconstruction" %}
-                        <li><a href="/categories/image_reconstruction" class="">Image Reconstruction ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Processing & Stimulation of Biosignals" %}
-                        <li><a href="/categories/processing_biosignal" class="">Processing & Stimulation of Biosignals ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "IT-aided Procedures in Operative Medicine" %}
-                        <li><a href="/categories/it_aided" class="">IT-aided Procedures in Operative Medicine ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Biomimetic Hand Project" %}
-                        <li><a href="/categories/hand_project" class="">Biomimetic Hand Project ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <span class="nav__sub-title">Robotics</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Arduino" %}
-                        <li><a href="/categories/arduino" class="">Arduino ({{category[1].size}})</a></li>
+                    {% if category[0] == "Baekjoon Solution" %}
+                        <li><a href="/categories/filter" class="">신호처리필터정리 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

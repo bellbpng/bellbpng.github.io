@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: single
 title:  "Arduino starter kit 구성품"
 excerpt: "components of Arduino starter kit"
@@ -64,4 +64,4 @@ toc_sticky: true
 
 ### ICSP(In Circuit Serial Programming)
 - MCU에 직접 프로그래밍 가능한 통신포트이다.
-- SPI 통신을 사용한다. 
+- SPI 통신을 사용한다.  -->
