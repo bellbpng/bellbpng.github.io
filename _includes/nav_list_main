@@ -55,7 +55,7 @@
             <span class="nav__sub-title">Computer Vision</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Baekjoon Solution" %}
+                    {% if category[0] == "Filter" %}
                         <li><a href="/categories/filter" class="">신호처리필터정리 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
