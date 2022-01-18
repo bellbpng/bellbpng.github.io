@@ -121,7 +121,7 @@ t.size = 10x10 = 100 = y.size 이다.
 
 ### [참고자료]
 - 밑바닥부터 시작하는 딥러닝
-- Numpy 난수 생성(Random 모듈) https://codetorial.net/numpy/random.html
-- (파이썬) numpy.arange - 코딩 연습 https://codepractice.tistory.com/88
-- NumPy(넘파이)에서의 indexing  https://kongdols-room.tistory.com/58
+- [Numpy 난수 생성(Random 모듈)](https://codetorial.net/numpy/random.html)
+- [(파이썬) numpy.arange - 코딩 연습](https://codepractice.tistory.com/88)
+- [NumPy(넘파이)에서의 indexing](https://kongdols-room.tistory.com/58)
 
