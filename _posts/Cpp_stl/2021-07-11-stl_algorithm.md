@@ -88,4 +88,22 @@ int max = *max_element(v.begin(), v.end());
 int min = *min_element(v.begin(), v.end());
 ```
 
+### binary_search 함수
+- 이진탐색 함수
+
+```c
+#include <iostream>
+#include <algorithm>
+
+binary_search(low_iter, high_iter, key)
+// 탐색에 성공하면 (key를 찾으면) true 반환
+
+if(binary_search(v.begin(), v.end(), key)){
+  // doing something
+}
+
+```
+
+- 이진탐색을 진행하려면 배열이 반드시 정렬되어 있어야한다. (오름차순)
+- 시간복잡도는 O(log2(n))
 
