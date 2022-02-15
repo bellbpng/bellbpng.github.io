@@ -1,10 +1,10 @@
 ---
 layout: single
-title:  "C++ STL정리 - string"
+title:  "C++ STL - string"
 excerpt: "C++ STL - string 클래스 멤버함수 정리 "
 
 categories:
-  - C++ STL
+  - C/C++
 # tags:
 #   - [ML, Python]
 

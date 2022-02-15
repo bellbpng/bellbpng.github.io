@@ -26,22 +26,15 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "STL" %}
-                        <li><a href="/categories/stl" class="">C++ STL & 표준 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/tmp" class="">haha ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
         <span class="nav__sub-title">Programming</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "C language" %}
-                        <li><a href="/categories/c_basic" class="">C언어 기초 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "C++ STL" %}
-                        <li><a href="/categories/cpp_stl" class="">C++ STL ({{category[1].size}})</a></li>
+                    {% if category[0] == "C/C++" %}
+                        <li><a href="/categories/c_cpp" class="">C/C++ ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

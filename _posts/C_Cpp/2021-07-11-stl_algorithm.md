@@ -1,10 +1,10 @@
 ---
 layout: single
-title:  "C++ STL정리 - algorithm"
+title:  "C++ STL - algorithm"
 excerpt: "C++ STL - algorithm "
 
 categories:
-  - C++ STL
+  - C/C++
 # tags:
 #   - [ML, Python]
 

@@ -1,10 +1,10 @@
 ---
 layout: single
-title:  "C++ STL정리 - cctype"
+title:  "C++ STL - cctype"
 excerpt: "C++ STL - cctype "
 
 categories:
-  - C++ STL
+  - C/C++
 # tags:
 #   - [ML, Python]
 

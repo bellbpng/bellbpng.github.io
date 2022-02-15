@@ -1,10 +1,10 @@
 ---
 layout: single
-title:  "C++ STL정리 - vector"
+title:  "C++ STL - vector"
 excerpt: "C++ STL - 벡터 컨테이너 멤버함수 정리 "
 
 categories:
-  - C++ STL
+  - C/C++
 # tags:
 #   - [ML, Python]
 
