@@ -48,7 +48,7 @@
         <span class="nav__sub-title">Projects</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Filter" %}
+                    {% if category[0] == "SpeechToText" %}
                         <li><a href="/categories/speect_to_text" class="">STT(Speech to Text) ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
