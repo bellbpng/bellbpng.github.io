@@ -45,11 +45,11 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <span class="nav__sub-title">Computer Vision</span>
+            <span class="nav__sub-title">Projects</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Filter" %}
-                        <li><a href="/categories/filter" class="">신호처리필터정리 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/speect_to_text" class="">STT(Speech to Text) ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
