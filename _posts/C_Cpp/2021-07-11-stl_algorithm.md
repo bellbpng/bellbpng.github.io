@@ -107,3 +107,18 @@ if(binary_search(v.begin(), v.end(), key)){
 - 이진탐색을 진행하려면 배열이 반드시 정렬되어 있어야한다. (오름차순)
 - 시간복잡도는 O(log2(n))
 
+
+### reverse 함수
+- 문자열을 거꾸로 뒤집는 함수
+
+```c
+#include <algorithm>
+
+std::reverse(first_iter, last_iter);
+// [first, last) 범위로 마지막 인덱스는 포함하지 않는다.
+
+std::string str = "Bokyoung";
+std::reverse(str.begin(), str.end());
+
+```
+
