@@ -122,3 +122,24 @@ std::reverse(str.begin(), str.end());
 
 ```
 
+### next_permutation 함수
+- 순열을 구하는 함수
+- 컨테이너가 오름차순으로 정렬되어 있어야 함
+
+```c
+#include <algorithm>
+#include <vector>
+
+std::next_permutation(first_iter, last_iter);
+// bool 반환형으로 더 이상 정렬할 수 있는 수열이 없으면 false 반환
+
+std::vector<int> v = {1, 3, 5 ,7, 9};
+
+do{
+  for(auto iter : v){
+    std::cout << *iter << " ";
+  }
+  std::cout << "\n";
+} while(std::next_permutation(v.begin(), v.end()));
+
+```
