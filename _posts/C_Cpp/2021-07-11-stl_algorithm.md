@@ -137,7 +137,7 @@ std::vector<int> v = {1, 3, 5 ,7, 9};
 
 do{
   for(auto iter : v){
-    std::cout << *iter << " ";
+    std::cout << iter << " ";
   }
   std::cout << "\n";
 } while(std::next_permutation(v.begin(), v.end()));
