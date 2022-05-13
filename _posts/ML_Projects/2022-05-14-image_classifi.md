@@ -121,3 +121,4 @@ np.array(class_names)[y_pred] # y_pred 원소에 해당하는 class_names 으로
 
 #### [참고자료]
 - 핸즈온 머신러닝 2판
+
