@@ -114,7 +114,7 @@ y_pred = model.predict(X_new)
 
 ```
 
-<<img src="https://user-images.githubusercontent.com/59792046/168466427-6dd3d0ab-055a-4e5a-bd6e-b7c9fb342919.png" width=700>
+<img src="https://user-images.githubusercontent.com/59792046/168466427-6dd3d0ab-055a-4e5a-bd6e-b7c9fb342919.png" width=700>
 
 - 순차적이지 않은 신경망의 한 예로 와이드 & 딥(Wide & Deep) 신경망이 있다. 위 구조에서 확인할 수 있듯이 신경망이 복잡한 패턴(은닉층을 활용한)과 간단한 규칙(짧은 경로를 사용한)을 모두 학습할 수 있다. 
 - 층 전체에 모든 데이터를 통과시키는 MLP 네트워크는 데이터에 있는 간단한 패턴이 연속된 변환으로 왜곡될 수 있다.
