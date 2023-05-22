@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "보글게임"
+title:  "[알고리즘 문제해결 전략] 보글게임"
 excerpt: "완전탐색, 재귀"
 
 categories:

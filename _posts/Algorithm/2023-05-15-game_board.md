@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "게임판"
+title:  "[알고리즘 문제해결 전략] 게임판"
 excerpt: "완전탐색, 재귀"
 
 categories:
