@@ -3,6 +3,11 @@ layout: single
 title:  "게임판"
 excerpt: "완전탐색, 재귀"
 
+categories:
+  - Algorithm
+# tags:
+#   - [ML, Python]
+
 toc: true
 toc_sticky: true
 ---

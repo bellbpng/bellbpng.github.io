@@ -3,6 +3,8 @@ layout: single
 title:  "보글게임"
 excerpt: "완전탐색, 재귀"
 
+categories:
+  - Algorithm
 # tags:
 #   - [ML, Python]
 
