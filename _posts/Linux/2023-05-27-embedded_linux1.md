@@ -56,4 +56,5 @@ toc_sticky: true
 ### Root File System
 - 리눅스 동작에 필요한 기능과 시스템 초기화 및 주변 장치 제어를 위한 부팅 과정에 필요한 프로그램들과 자료를 관리하는 파일 시스템
 - [루트 파일 시스템 구성](https://m.blog.naver.com/ibank97/221971880145)
+
 ![Linux kernel directory](https://github.com/bellbpng/Embedded_Linux/assets/59792046/e044a2b1-0c7a-42c9-9e8c-ae76ec6d6485)
