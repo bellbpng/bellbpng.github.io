@@ -50,7 +50,8 @@ cd rootfs_new
 - /etc/inittab 파일을 만들어 /sbin/init 에 대한 설정을 해야함
   - 까다로운 작업이라 기존에 안정적으로 동작하는 etc 디렉터리를 복사해서 사용
   - udev 설치(6번과정) 이후에 진행하는 것이 좋음
-``` python
+
+``` 
 # /etc/inittab
 #
 # Copyright (C) 2001 Erik Andersen <andersen@codepoet.org>
@@ -147,6 +148,7 @@ set bootargs 'root=/dev/nfs rw nfsroot=192.168.20.90:/usr/local/arm-none-linux-g
 5. 루트 파일 시스템 최적화
   - 정적 라이브러리는 컴파일 이후 삭제 가능
   - 동적 라이브러리는 반드시 필요
+
 ```
 find -iname '*.a' -exec rm {} \;
 rm -r usr/include/*
@@ -154,6 +156,7 @@ rm -r usr/include/*
 6. 최적화 검증
 - Target을 NFS로 부팅되는지 확인한다.
 - U-boot prompt에서 아래 명령어로 재설정
+
 ```
 set bootargs 'root=/dev/nfs rw nfsroot=192.168.20.90:/nfs/rootfs ip=192.168.20.246:192.168.20.90:192.168.20.1:255.255.255.0::eth0:off console=ttySAC1,115200n81'
 ```
@@ -173,14 +176,17 @@ set bootargs 'root=/dev/nfs rw nfsroot=192.168.20.90:/nfs/rootfs ip=192.168.20.2
 7. 커널 이미지 및 램디스크 이미지 로드
   - 생성한 커널 이미지와 램디스크 이미지를 타겟 보드의 RAM에 로드
   - U-boot prompt에서 아래 명령어 실행
+
 ```
 MDS2450# tftpboot 32000000 zImage
 MDS2450# tftpboot 30800000 ramdisk-mds2450.gz
 MDS2350# bootm 32000000
 ```
+
 8. 커널 이미지 및 램디스크 이미지 NANd fusing
 - 제작한 램디스크를 NAND flash에 write 하는 작업
 - U-boot prompt에서 아래 명령어 실행
+
 ```
 tftpboot 32000000 zImage;tftpboot 30800000 ramdisk-mds2450.gz
 ```
