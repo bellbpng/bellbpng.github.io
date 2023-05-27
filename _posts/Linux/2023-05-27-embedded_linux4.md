@@ -102,7 +102,9 @@ set bootargs 'root=/dev/nfs rw nfsroot=192.168.20.90:/usr/local/arm-none-linux-g
 
 ### 시스템 패키징
 - 리눅스 커널, Root File System을 고정 Storage에 넣어두는 방법
-1. NAND flash initrd 패키징 모델 
+
+**NAND flash initrd 패키징 모델**
+
   - zImage, Root file system(ramdisk.gz)을 NAND Flash에 write한다.
   - 커널이 부팅되면서 Root file system 압축을 풀어 RAM에 로드하는 방법
   - RAM에 file system이 올라가는 방식이기 때문에 전원이 종료되면 write한 내용이 모두 지워짐
@@ -110,7 +112,8 @@ set bootargs 'root=/dev/nfs rw nfsroot=192.168.20.90:/usr/local/arm-none-linux-g
 ![램디스크 패키징](https://github.com/bellbpng/Embedded_Linux/assets/59792046/be7c57ad-fdc9-4142-bb9c-fe357cb8e6ff)
 
 
-2. MTD(jiff2 or yaffs2) 패키징 모델
+**MTD(jiff2 or yaffs2) 패키징 모델**
+
   - 1번과 다르게 NAND Flash에 Root file system을 구축하는 방식
   - 속도가 1번에 비해 느리지만 NAND flash를 스토리지로 사용하기 때문에 데이터가 보존된다.
   - 실제 제품 출시에서는 메모리가 부족하기 때문에 목적에 맞게 루트 파일 시스템을 파티셔닝하여 관리한다.
@@ -118,7 +121,8 @@ set bootargs 'root=/dev/nfs rw nfsroot=192.168.20.90:/usr/local/arm-none-linux-g
 ![MTD 패키징](https://github.com/bellbpng/Embedded_Linux/assets/59792046/66ecd131-bc21-4134-9487-13411400e8b4)
 
 
-3. MTD + Ramdisk 혼합 패키징 모델
+**MTD + Ramdisk 혼합 패키징 모델**
+
   - 가장 많이 쓰임
 
 ![MTD+ramdisk 혼합 패키징](https://github.com/bellbpng/Embedded_Linux/assets/59792046/66011af2-ffc6-4926-9791-0dd962a10049)
