@@ -50,7 +50,7 @@ cd rootfs_new
 - /etc/inittab 파일을 만들어 /sbin/init 에 대한 설정을 해야함
   - 까다로운 작업이라 기존에 안정적으로 동작하는 etc 디렉터리를 복사해서 사용
   - udev 설치(6번과정) 이후에 진행하는 것이 좋음
-``` 
+``` python
 # /etc/inittab
 #
 # Copyright (C) 2001 Erik Andersen <andersen@codepoet.org>
