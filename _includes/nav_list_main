@@ -12,50 +12,50 @@
       </li>
       <li>
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-        <span class="nav__sub-title">Macnine Learning</span>
+        <span class="nav__sub-title"> ⚙Macnine Learning</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
                 <!--Deep Learning 카테고리 글들을 모아둔 페이지인 /categories/deeplearning_1 주소의 글로 링크 연결-->
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
                     {% if category[0] == "Deep Learning from Scratch1" %}
-                        <li><a href="/categories/deeplearning_1" class="">Deep Learning from Scratch1 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/deeplearning_1" class="">🐟Deep Learning from Scratch1 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "ML Project" %}
-                        <li><a href="/categories/ml_project" class="">ML Projects ({{category[1].size}})</a></li>
+                        <li><a href="/categories/ml_project" class="">📊ML Projects ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Programming</span>
+        <span class="nav__sub-title">💻 Programming</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "C/C++" %}
-                        <li><a href="/categories/c_cpp" class="">C/C++ ({{category[1].size}})</a></li>
+                        <li><a href="/categories/c_cpp" class="">🌕C/C++ ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Baekjoon Solution" %}
-                        <li><a href="/categories/baekjoon_sol" class="">백준 문제풀이(with C++) ({{category[1].size}})</a></li>
+                        <li><a href="/categories/baekjoon_sol" class="">📚백준 문제풀이(with C++) ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/algorithm" class="">알고리즘 공부 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/algorithm" class="">📐알고리즘 공부 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Linux" %}
-                        <li><a href="/categories/linux" class="">Linux 공부 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/linux" class="">🐧Linux 공부 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -63,7 +63,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "SpeechToText" %}
-                        <li><a href="/categories/speect_to_text" class="">STT(Speech to Text) ({{category[1].size}})</a></li>
+                        <li><a href="/categories/speect_to_text" class="">🔊STT(Speech to Text) ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
