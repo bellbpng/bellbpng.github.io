@@ -157,3 +157,5 @@ vector<int> solution(vector<string> genres, vector<int> plays) {
         - total_plays[ctg_idx]: ctg_idx에 해당하는 장르의 전체 재생 횟수를 담는다.
 - 전체 재생 횟수를 기준으로 장르 인덱스를 내림차순 정렬한다.
 - 졍렬된 장르 인덱스 순서대로 board 에 접근하여 노래의 고유 번호를 answer에 담는다.
+
+
