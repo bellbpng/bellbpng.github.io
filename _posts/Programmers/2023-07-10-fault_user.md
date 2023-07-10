@@ -106,3 +106,5 @@ int solution(vector<string> user_id, vector<string> banned_id) {
     - 인덱스를 활용한다. 즉, **banned_user_map[ban_idx][num]** 은 **banned_id** 의 ban_idx 번째 id와 매핑이 가능한 user_id 에 속한 문자열의 인덱스를 의미한다. num 은 제재가 가능한 문자열이 여러 개 있을 수 있다는 것을 의미한다.
 - 매핑이 끝나면, **banned_user_map** 을 탐색하며 제재 리스트를 만든다.
     - 제재 리스트는 순서만 디를 뿐 중복될 수 있으므로, 제재 리스트가 완성되면 오름차순 정렬한 후 과거에 만들어진 적이 있는 리스트인지 확인한다.
+
+    

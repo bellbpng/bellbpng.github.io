@@ -159,3 +159,4 @@ vector<int> solution(vector<string> genres, vector<int> plays) {
 - 졍렬된 장르 인덱스 순서대로 board 에 접근하여 노래의 고유 번호를 answer에 담는다.
 
 
+
