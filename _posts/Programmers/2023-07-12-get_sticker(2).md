@@ -73,3 +73,7 @@ int solution(vector<int> sticker)
         - 스티커를 떼는 경우: dp[i] = sticker[i] + dp[i-2]
         - 스티커를 떼지 않는 경우: dp[i] = dp[i-1]
 
+
+
+
+
