@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "프로그래머스 - 1차 비밀지도 (Lv.2)"
+title:  "프로그래머스 - 1차 비밀지도 (Lv.1)"
 excerpt: "2018 KAKAO BLIND RECRUITMENT"
 
 categories:
