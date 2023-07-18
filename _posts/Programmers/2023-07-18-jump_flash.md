@@ -44,4 +44,3 @@ int solution(int n)
 }
 
 ```
-
