@@ -15,7 +15,7 @@ toc_sticky: true
 ## 문제 링크
 - [뉴스 클러스터링](https://school.programmers.co.kr/learn/courses/30/lessons/17677)
 
-## 문제 접근
+## 문제 접근1
 - 주어진 두 문자열의 알파벳을 소문자로 바꾸고, 다중집합을 만든다.
     - 알파벳이 아닌 문자는 무시하므로, 알파벳으로 문자가 2개 채워졌는지 확인을 해줘야 한다.
 - 교집합을 이루는 원소의 개수와 합집합을 이루는 원소의 개수를 구한다.
@@ -109,4 +109,57 @@ int solution(string str1, string str2) {
     
     return answer;
 }
+```
+
+## 문제 접근2
+- 알파벳 2개로 가능한 모든 조합은 26*26개이다. 
+- 따라서, 각 case에 따라 배열의 인덱스를 지정해두고 str1 이 이루는 집합의 각 원소의 개수와 str2가 이루는 집합의 각 원소의 개수를 저장해둔다.
+- 교집합은 두 집합의 원소의 개수 중 적은 쪽을 선택하고, 합집합은 많은 쪽을 선택하면 된다.
+
+### 구현(All Pass)
+```c++
+#include <string>
+#include <vector>
+#include <cctype>
+#include <algorithm>
+#include <iostream>
+
+using namespace std;
+
+int solution(string str1, string str2) {
+    int answer = 0;
+    // init
+    // 가능한 모든 조합
+    vector<int> set_1(26*26, 0);
+    vector<int> set_2(26*26, 0);
+    
+    for(int i=0; i<str1.size(); i++){
+        if(isalpha(str1[i]) && isalpha(str1[i+1])){
+            if(isupper(str1[i])) str1[i]=tolower(str1[i]);
+            if(isupper(str1[i+1])) str1[i+1]=tolower(str1[i+1]);
+            set_1[(str1[i]-'a')*26 + (str1[i+1]-'a')]++;
+        }
+    }
+    
+    for(int i=0; i<str2.size(); i++){
+        if(isalpha(str2[i]) && isalpha(str2[i+1])){
+            if(isupper(str2[i])) str2[i]=tolower(str2[i]);
+            if(isupper(str2[i+1])) str2[i+1]=tolower(str2[i+1]);
+            set_2[(str2[i]-'a')*26 + (str2[i+1]-'a')]++;
+        }
+    }
+    
+    int inter_cnt = 0, union_cnt=0;
+    for(int i=0; i<set_1.size(); i++){
+        inter_cnt += min(set_1[i], set_2[i]);
+        union_cnt += max(set_1[i], set_2[i]);
+    }
+    if(union_cnt==0) 
+        answer = 65536;
+    else
+        answer = int(((float)inter_cnt/union_cnt) * 65536);
+    
+    return answer;
+}
+
 ```
