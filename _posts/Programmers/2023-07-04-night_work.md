@@ -60,6 +60,7 @@ long long solution(int n, vector<int> works) {
 - 로직은 같으나, sort 함수로 매번 졍럴하는 것이 아니라 우선순위 큐를 활용하여 최대 힙 구조를 활용할 수 있도록 한다.
 
 ### 구현(All Pass)
+
 ```c++
 #include <string>
 #include <vector>
@@ -101,9 +102,11 @@ long long solution(int n, vector<int> works) {
     return answer;
 }
 ```
+
 - priority_queue 는 기본 설정은 최대 힙(Top에 최댓값이 위치)이고, **greater<int>** 를 비교 인자로 전달하면 최소 힙(Top에 최솟값이 위치)을 구성한다.
 - 우선순위 큐에 들어가는 비교 인자는 현재 원소와 새로 들어온 원소의 우선순위를 비교하는 인자이고, 아래와 같이 커스텀 할 수 있다.
 - 벡터의 원소들을 정렬할 때 사용하는 비교인자 작성 방법과는 차이가 있다.
+
 ```c++
 
 // 벡터 정렬 비교인자 작성
