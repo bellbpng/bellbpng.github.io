@@ -54,8 +54,15 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "Softeer" %}
+                        <li><a href="/categories/softeer" class="">🧩소프티어 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/algorithm" class="">📐알고리즘 공부 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/algorithm" class="">📐문제해결전략 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
