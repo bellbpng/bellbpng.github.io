@@ -54,6 +54,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "Samsung SW" %}
+                        <li><a href="/categories/samsung_sw" class="">🎇SW Expert Academy ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "Softeer" %}
                         <li><a href="/categories/softeer" class="">🧩소프티어 ({{category[1].size}})</a></li>
                     {% endif %}
