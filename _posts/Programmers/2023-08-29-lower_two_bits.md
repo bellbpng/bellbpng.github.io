@@ -152,3 +152,4 @@ vector<long long> solution(vector<long long> numbers) {
 }
 ```
 - 짝수여도 0인 비트를 1로 바꾸는 작업은 유효하다. 또, 0인 비트를 찾기 위해 비트를 이동한 횟수는 0이기 때문에 홀수에서의 로직과 동일하게 적용할 수 있다.
+
