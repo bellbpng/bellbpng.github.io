@@ -32,7 +32,7 @@ toc_sticky: true
     - yum 데이터베이스 동기화 업데이트 : yum update
 - dnf: CentOS 8 에서 도입된 command, 기존 yum과 동일
 
-## 설치 명령여
+## 설치 명령어
 - `yum -y install gcc` : C 컴파일러 설치
 - `yum -y install gcc-c++` : C++ 컴파일러 설치
 - `-y` 옵션은 설치 중간에 나오는 입력란을 자동으로 y 처리 해줌
