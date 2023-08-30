@@ -61,3 +61,15 @@ toc_sticky: true
 - `NAT 네트워크`
     - NAT + Host 내부 네트워크와 통신 가능
 
+## PuTTY 설치 및 원격 접속
+- PuTTY(퍼티, /ˈpʌti/[3])라고 부르며 SSH, Telnet, rlogin, raw TCP를 위한 클라이언트로 동작하는 자유 및 오픈 소스 단말 에뮬레이터 응용 프로그램이다.
+- 👉 [PuTTY 설치 링크](https://www.putty.org/)
+- 설치된 CentOS 혹은 Ubuntu 환경에서 사용자 로그인 후 `ifconfig` 명령어를 통해 IP 주소를 확인한다.
+
+<img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/a9d4d230-3f42-4440-9cf1-29219e9bc1de">
+
+- CentOS 에서 확인한 가상 NIC 장치명은 enp0s3 이고, IP주소는 **10.0.2.15** 임을 알 수 있음
+- lo는 Loopback 처리를 위한 가상 인터페이스 장치명
+- VirtualBox의 설정에서 **포트포워딩** 작업으로 SSH 원격 접속 가능
+
+<img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/9ed20c56-e9fa-4c31-aea7-2c3f4180b2e9">
