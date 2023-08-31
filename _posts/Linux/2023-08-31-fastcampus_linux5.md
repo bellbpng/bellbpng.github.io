@@ -239,11 +239,14 @@ int main()
 int chown(const char *pathname, uid_t owner, gid_t group);
 ```
 - pathname 의 소유권을 변경한다.
+- 정상 수행 시 0을 반환하고, 에러 발생 시 -1을 반환한다.
 - 소유권 정수값은 다음과 같다.
     - 0: root
     - 1: bin
     - 2: daemon
-- 정상 수행 시 0을 반환하고, 에러 발생 시 -1을 반환한다.
+
+<img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/6d93484e-b589-4b43-846c-9ea94ec992d8" width="800">
+
 
 ```c++
 #include <stdio.h>
