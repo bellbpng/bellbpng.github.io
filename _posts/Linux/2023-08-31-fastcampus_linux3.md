@@ -53,9 +53,9 @@ toc_sticky: true
 - 사용자 응용 프로그램이 문제가 생겼을 경우 코어(core) 파일을 생성할 수 있으려면, 시스템에서 제한하는 코어 파일 크기가 0보다 커야 한다.
 - `ulimit -a` 명령으로 코어 파일 크기를 확인할 수 있고, `ulimit -c` 명령으로 코어 파일 크기를 변경할 수 있다.
 
-<img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/bf51a2dc-6272-49fb-98f6-8f3b6898e7a6" width="600" height="580">
+<img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/bf51a2dc-6272-49fb-98f6-8f3b6898e7a6" width="600">
 
-<img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/6a378495-a37e-4601-b60f-116d83397da7">
+<img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/6a378495-a37e-4601-b60f-116d83397da7" width="600">
 
 - 코어 덤프의 네이밍 형식은 다음과 같다.
     - `%e` - executable filename
@@ -63,7 +63,7 @@ toc_sticky: true
     - `%h` - hostname (same as nodename returned by unname(2))
     - `%t` - time of dump (seconds since 0:00h, 1, Jan 1970)
 
-<img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/62b34485-4715-445c-b576-130e5d9e926e" width="600" height="580">
+<img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/62b34485-4715-445c-b576-130e5d9e926e" width="600">
 
 - **gdb_test1** : 실행 파일 이름
 - **1566** : 비정상적으로 종료된 프로세스의 PID
@@ -73,7 +73,7 @@ toc_sticky: true
 - `gdb [소스파일]` 명령으로 오류 정보를 바로 출력하면서 확인할 수 있다.
 - `run` 을 이용하여 실행
 
-<img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/033e78c7-6433-411f-bc74-f25ce2635e54" width="600" height="100">
+<img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/033e78c7-6433-411f-bc74-f25ce2635e54" width="600">
 
 - `gdb [코어 덤프 파일]` 명령으로 생성된 코어 덤프 파일 내용을 위와 같이 출력할 수 있다.
 
