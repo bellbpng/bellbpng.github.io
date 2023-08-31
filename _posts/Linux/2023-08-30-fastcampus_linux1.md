@@ -79,3 +79,5 @@ toc_sticky: true
 
 <img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/89289642-59ac-42ce-8fee-c6a2970e8251">
 
+#### Reference.
+- 패스트캠퍼스 리눅스 올인원 패키지 강좌

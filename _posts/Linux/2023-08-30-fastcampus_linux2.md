@@ -62,4 +62,8 @@ toc_sticky: true
     - ex) gcc –Wall hello.c –o hello -lpthread
 - `-v` : 모든 실행 커맨드 출력
     - ex) gcc –Wall –v hello.c –o hello
+- `-g` : gdb 제공 정보를 바이너리에 삽입
+    - ex) gcc -g hello.c -o hello
 
+#### Reference.
+- 패스트캠퍼스 리눅스 올인원 패키지 강좌
