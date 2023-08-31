@@ -22,9 +22,9 @@ toc_sticky: true
 ## Makefile 작성법
 ```makefile
 target … : prerequisites …
-		recipe
-		…
-		…
+	recipe
+	…
+	…
 ```
 - `target`
 	- 일반적으로 프로그램에 의해 생성되는 파일의 이름으로 실행 파일 또는 object 파일
@@ -40,23 +40,23 @@ edit : main.o kbd.o command.o display.o insert.o search.o files.o utils.o
 		cc -o edit main.o kbd.o command.o display.o insert.o search.o files.o utils.o
 
 main.o : main.c defs.h
-		cc -c main.c
+	cc -c main.c
 kbd.o : kbd.c defs.h command.h
-		cc -c kbd.c
+	cc -c kbd.c
 command.o : command.c defs.h command.h
-		cc -c command.c
+	cc -c command.c
 display.o : display.c defs.h buffer.h
-		cc -c display.c
+	cc -c display.c
 insert.o : insert.c defs.h buffer.h
-		cc -c insert.c
+	cc -c insert.c
 search.o : search.c defs.h buffer.h
-		cc -c search.c
+	cc -c search.c
 files.o : files.c defs.h buffer.h command.h
-		cc -c files.c
+	cc -c files.c
 utils.o : utils.c defs.h
-		cc -c utils.c
+	cc -c utils.c
 clean :
-		rm edit main.o kbd.o command.o display.o \
+	rm edit main.o kbd.o command.o display.o \
 		   insert.o search.o files.o utils.o
 ```
 - `edit` 이라는 실행 파일을 만들기 위해서는 main.o, kbd.o 등 8개의 오브젝트 파일이 필요하고, 8개의 오브젝트 파일을 Linking 해서 얻는다.
@@ -74,10 +74,10 @@ TARGET = test_program
 OBJS = main.o config.o debug.o log.o
 
 all : $(OBJS)
-		cc –o $(TARGET) $(OBJS) $(LDLIBS)
+	cc –o $(TARGET) $(OBJS) $(LDLIBS)
 clean :
-		rm –f $(OBJS)
-		rm –f $(TARGET)
+	rm –f $(OBJS)
+	rm –f $(TARGET)
 ```
 - `CFLAGS`, `LDLIBS`, `TARGET`, `OBJS` 등 매크로를 지정한다.
 - 매크로를 지정해두면 `all : $(OBJS)` 와 같이 여러개의 오브젝트 파일들을 간단하게 표현할 수 있다.
@@ -105,13 +105,13 @@ OBJS = main.o sub.o
 
 all : $(TARGET)
 $(TARGET) : $(OBJS)
-		$(CC) $(CFLAGS) –o $@ $^
+	$(CC) $(CFLAGS) –o $@ $^
 main.o : main.c
-		$(CC) $(CFLAGS) –c –o $@ $^
+	$(CC) $(CFLAGS) –c –o $@ $^
 sub.o : sub.c
-		$(CC) $(CFLAGS) –c –o $@ $^
+	$(CC) $(CFLAGS) –c –o $@ $^
 clean :
-		rm –rf *.o $(TARGET)
+	rm –rf *.o $(TARGET)
 ```
 - `$@` : 최종 타겟의 파일 이름
 - `$<` : 첫번째 전제 조건의 이름
@@ -125,7 +125,7 @@ clean :
 - `s.$.c` 패턴은 **s.** 으로 시작하고 **.c** 로 끝나는 파일 이름과 일치
 ```makefile
 %.o:%.c
-		$(CC) $(CFLAGS) –c $< –o $@
+	$(CC) $(CFLAGS) –c $< –o $@
 ```
 - `.c` 파일을 `.o` 파일로 컴파일하는 규칙
 
