@@ -37,7 +37,7 @@ target … : prerequisites …
 ### Simple Makefile
 ```makefile
 edit : main.o kbd.o command.o display.o insert.o search.o files.o utils.o
-		cc -o edit main.o kbd.o command.o display.o insert.o search.o files.o utils.o
+	cc -o edit main.o kbd.o command.o display.o insert.o search.o files.o utils.o
 
 main.o : main.c defs.h
 	cc -c main.c
@@ -57,7 +57,7 @@ utils.o : utils.c defs.h
 	cc -c utils.c
 clean :
 	rm edit main.o kbd.o command.o display.o \
-		   insert.o search.o files.o utils.o
+	insert.o search.o files.o utils.o
 ```
 - `edit` 이라는 실행 파일을 만들기 위해서는 main.o, kbd.o 등 8개의 오브젝트 파일이 필요하고, 8개의 오브젝트 파일을 Linking 해서 얻는다.
 	- 총 8개의 소스파일과 3개의 헤더파일에 의존한다.
