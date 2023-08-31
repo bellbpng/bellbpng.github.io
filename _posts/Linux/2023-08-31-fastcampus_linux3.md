@@ -142,7 +142,7 @@ int main (void)
 ```
 - 코드 실행 모습
 
-<img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/f4a9fa2c-5304-4e1e-aaaa-720653dd60a9" witdh="1000">
+<img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/f4a9fa2c-5304-4e1e-aaaa-720653dd60a9" witdh="950">
 
 - 링커에게 backtrace를 사용한다는 플래그 `-rdynamic` 전달
 - 5개의 스택 프레임 생성
