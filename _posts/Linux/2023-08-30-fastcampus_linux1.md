@@ -71,5 +71,11 @@ toc_sticky: true
 - CentOS 에서 확인한 가상 NIC 장치명은 enp0s3 이고, IP주소는 **10.0.2.15** 임을 알 수 있음
 - lo는 Loopback 처리를 위한 가상 인터페이스 장치명
 - VirtualBox의 설정에서 **포트포워딩** 작업으로 SSH 원격 접속 가능
+- 이때, NAT 환경을 사용하고 있기 때문에 [호스트 NIC -> Virtual Box 가상 NIC] 로 접근은 불가능하다.
+- 즉, `10.0.2.15` 주소를 직접 사용할 수 없다.
+- 따라서 현재 사용중인 `localhost` IP주소로 접근하여 포트 포워딩일 해줘야 한다.
+- SSH는 22번 포트를 사용한다.
+- HOST의 22번 포트로 들어오는 데이터는 가상머신의 22번 포트로 연결된다는 의미이다.
 
-<img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/9ed20c56-e9fa-4c31-aea7-2c3f4180b2e9">
+<img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/89289642-59ac-42ce-8fee-c6a2970e8251">
+
