@@ -73,7 +73,7 @@ toc_sticky: true
 - `gdb [소스파일]` 명령으로 오류 정보를 바로 출력하면서 확인할 수 있다.
 - `run` 을 이용하여 실행
 
-<img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/033e78c7-6433-411f-bc74-f25ce2635e54" width="600">
+<img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/033e78c7-6433-411f-bc74-f25ce2635e54" width="700">
 
 - `gdb [코어 덤프 파일]` 명령으로 생성된 코어 덤프 파일 내용을 위와 같이 출력할 수 있다.
 
