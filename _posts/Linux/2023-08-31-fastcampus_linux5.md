@@ -49,6 +49,7 @@ int creat(const char *pathname, mode_t mode);
 - 정상 수행 시 파일 디스크립터(fd)를 반환하고, 에러 발생시 -1을 반환한다.
 
 - **File mode bits**
+
 <img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/afa15063-e1eb-4bda-a787-e448a89ba070">
 
 [출처] 패스트캠퍼스
@@ -272,3 +273,6 @@ int main()
 
 <img src="https://github.com/bellbpng/Baekjoon_hub/assets/59792046/adb7a902-f92c-49b9-a5f1-a809d7fe1a87" width="800">
 
+
+#### Reference.
+- 패스트캠퍼스 리눅스 올인원 패키지 강좌
