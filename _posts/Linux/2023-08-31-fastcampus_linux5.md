@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "파일 I/O (creat, access, stat)"
+title:  "파일 I/O (creat, access, stat, chmod, chown)"
 excerpt: "Linux System Programming"
 
 categories:
