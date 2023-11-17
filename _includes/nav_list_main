@@ -88,6 +88,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <span class="nav__sub-title">커리어 성장</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "retrospect" %}
+                        <li><a href="/categories/retrospect" class="">🤔회고 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
       </li>
   </ul>
 </nav>
