@@ -30,7 +30,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">💻 Programming</span>
+        <span class="nav__sub-title">💻 Coding Test</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "C/C++" %}
@@ -73,6 +73,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        <span class="nav__sub-title"> System Programming</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Linux" %}
@@ -80,7 +81,17 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Projects</span>
+        <span class="nav__sub-title"> 🤖Robotics</span>
+        <ul>
+            {% for category in site.categories %}
+                {% if category[0] == "ROS2" %}
+                    <li><a href="/categories/ros2" class="">🐢ROS2 ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+
+        <span class="nav__sub-title">Research</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "SpeechToText" %}
@@ -88,7 +99,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <span class="nav__sub-title">커리어 성장</span>
+        <span class="nav__sub-title">Career</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "retrospect" %}
