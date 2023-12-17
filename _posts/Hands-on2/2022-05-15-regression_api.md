@@ -4,7 +4,7 @@ title:  "다양한 API를 사용하여 회귀용 다층 퍼셉트론 만들기"
 excerpt: "시퀀셜 API, 함수형 API"
 
 categories:
-  - ML Project
+  - Hands-on Machine Learning 2
 # tags:
 #   - [ML, Python]
 

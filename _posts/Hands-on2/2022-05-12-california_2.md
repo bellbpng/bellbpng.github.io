@@ -4,7 +4,7 @@ title:  "캘리포니아 주택가격 예측하기2"
 excerpt: "캘리포니아 주택가격 예측 프로젝트"
 
 categories:
-  - ML Project
+  - Hands-on Machine Learning 2
 # tags:
 #   - [ML, Python]
 

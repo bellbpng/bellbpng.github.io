@@ -4,7 +4,7 @@ title:  "시퀀셜 API로 이미지 분류기 만들기"
 excerpt: "시퀀셜 API로 이미지 분류기 만들기"
 
 categories:
-  - ML Project
+  - Hands-on Machine Learning 2
 # tags:
 #   - [ML, Python]
 
