@@ -11,7 +11,12 @@
       {% if s.text %}{{ s.text | markdownify }}{% endif %}
       {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
     {% endfor %}
-    <!---방문자수---->
+    {% if page.sidebar.nav %}
+      {% include nav_list nav=page.sidebar.nav %}
+    {% endif %}
+  {% endif %}
+
+  <!---방문자수---->
   <a href="https://hits.seeyoufarm.com">
     <style>
       .hits {
@@ -22,16 +27,10 @@
     </style>
     <img class="hits" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fbellbpng.github.io&count_bg=%23D7B9F1&title_bg=%23F29886&icon=&icon_color=%23E7E7E7&title=%EB%B0%A9%EB%AC%B8%EC%9E%90%EC%88%98&edge_flat=false"/>
   </a>
-    {% if page.sidebar.nav %}
-      {% include nav_list nav=page.sidebar.nav %}
-    {% endif %}
-  {% endif %}
 
   {% if page.sidebar_main %}
     {% include nav_list_main %}
   {% endif %}
-
-  
   </div>
 {% endif %}
 
