@@ -73,11 +73,16 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title"> System Programming</span>
+        <span class="nav__sub-title"> ⭐Programming</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Linux" %}
                         <li><a href="/categories/linux" class="">🐧Linux 공부 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+                {% for category in site.categories %}
+                    {% if category[0] == "Object-Oriented Programming" %}
+                        <li><a href="/categories/oop" class="">🌕객체지향프로그래밍 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
