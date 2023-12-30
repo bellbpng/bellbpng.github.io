@@ -1,7 +1,7 @@
 ---
 layout: single
-title:  "SW Expert Academy - 프로세서 연결하기"
-excerpt: "[SW Test 샘플문제] D2"
+title:  "SW Expert Academy - 1767. 프로세서 연결하기"
+excerpt: "D2"
 
 categories:
   - Samsung SW
