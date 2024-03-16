@@ -21,7 +21,7 @@ toc_sticky: true
 - 따라서, n이 짝수라면 2로 나누고 n이 홀수라면 1을 뺀 후 건전지 사용량을 추가한다.
 - 재귀 호출을 통해 구현한다.
 
-### 구현(All Pass)
+### 구현1(All Pass)
 ```c++
 #include <iostream>
 using namespace std;
@@ -43,4 +43,23 @@ int solution(int n)
     return ans;
 }
 
+```
+
+### 구현2
+```c++
+#include <iostream>
+using namespace std;
+
+int move(int n){
+    if(n == 1) return 1;
+    else if (n%2 == 1) return n%2 + move(n/2);    
+    else if (n%2 == 0) return move(n/2);
+}
+
+int solution(int n)
+{
+    int ans = 0;
+    ans = move(n);
+    return ans;
+}
 ```
