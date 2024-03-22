@@ -73,3 +73,42 @@ string solution(int n, int t, int m, int p) {
 - 문자열로 변환하기 위해 사용하는 **string(n, char)** 은 char 문자를 n 개 붙여서 반환하는 함수이다. 따라서 char 자리에는 반드시 **붙일 문자** 가 와야한다.
 - **to_string(int)** 함수는 int 정수를 문자열로 변환하는 함수이다. 즉, 숫자를 문자로 표현한다. 
 
+### 구현2
+```c++
+#include <string>
+#include <vector>
+#include <iostream>
+using namespace std;
+
+string remainBiggerTen(int r){
+    char ch = 'A' + (r - 10);
+    return string(1, ch);
+}
+
+string convToFormat(int number, int fmt)
+{
+    if (number / fmt == 0) {
+        if (number % fmt >= 10) {
+            return remainBiggerTen(number % fmt);
+        }
+        return to_string(number % fmt);
+    }
+    if (number % fmt >= 10) return convToFormat(number / fmt, fmt) + remainBiggerTen(number % fmt);
+    else return convToFormat(number / fmt, fmt) + to_string(number % fmt);
+}
+
+string solution(int n, int t, int m, int p) {
+    string answer;
+    string convStr = "0";
+    int minLen = m * t; // 구해야 하는 최소 변환 문자열 길이
+    int num = 1;
+    while(convStr.length() < minLen){
+        convStr += convToFormat(num++, n);
+    }
+    for(int turn = 1; turn <= minLen; turn++){
+        if(turn % m == p) answer.push_back(convStr[turn-1]);
+        if(turn % m == 0 && m == p) answer.push_back(convStr[turn-1]);
+    }
+    return answer;
+}
+```
