@@ -116,4 +116,94 @@ vector<int> solution(vector<int> fees, vector<string> records) {
 - stringstream 은 str() 메소드를 활용하여 버퍼를 채울 수 있다.
     - **ss.str(records[i]);**
 
+
+### 구현2
+```c++
+#include <string>
+#include <vector>
+#include <map>
+#include <algorithm>
+#include <iostream>
+#include <sstream>
+
+using namespace std;
+
+map<string, int> table;
+
+int getMinutes(string time){
+    int ret = 0;
+    stringstream stm(time);
+    string hour, minute;
+    getline(stm, hour, ':');
+    stm >> minute;
     
+    ret = stoi(hour) * 60 + stoi(minute);
+    return ret;
+}
+
+void updateTable(vector<string>& records)
+{
+    map<string, int> enterInfo; // 차량이 들어온 시간 정보
+    for(int i=0; i<records.size(); i++){
+        stringstream stm(records[i]);
+        string time, carNumber, status;
+        stm >> time >> carNumber >> status;
+        if (status == "IN") {
+            enterInfo[carNumber] = getMinutes(time);
+        }
+        else if (status == "OUT") {
+            table[carNumber] += (getMinutes(time) - enterInfo[carNumber]);
+            enterInfo[carNumber] = -1; // 주차장을 빠져 나간 경우
+        }
+    }
+    
+    // 출차된 내역이 없는 경우
+    for (auto ele : enterInfo) {
+        if (ele.second != -1) {
+            table[ele.first] += (getMinutes("23:59") - ele.second);
+        }
+    }
+    
+}
+
+bool cmp(pair<string, int> p1, pair<string, int> p2)
+{
+    return p1.first < p2.first;
+}
+
+int getExtraFee(int exceedTime, int unitTime, int unitFee)
+{
+    if (exceedTime % unitTime != 0) return (exceedTime / unitTime + 1) * unitFee;
+    return (exceedTime / unitTime) * unitFee;
+}
+
+void calculateParkingFee(vector<int>& fees, vector<int>& answer)
+{
+    map<string, int> feeInfo;
+    int defaultTime = fees[0];
+    int defaultFee = fees[1];
+    int unitTime = fees[2];
+    int unitFee = fees[3];
+    
+    for (auto ele : table) {
+        if (ele.second <= defaultTime) feeInfo[ele.first] = defaultFee;
+        else if (ele.second > defaultTime) {
+            feeInfo[ele.first] = defaultFee + getExtraFee(ele.second - defaultTime, unitTime, unitFee);
+        }
+    }
+    vector<pair<string, int>> tmp(feeInfo.begin(), feeInfo.end());
+    sort(tmp.begin(), tmp.end(), cmp);
+    
+    for(auto ele : tmp){
+        answer.push_back(ele.second);
+    }
+}
+
+vector<int> solution(vector<int> fees, vector<string> records) {
+    vector<int> answer;
+    updateTable(records);
+    calculateParkingFee(fees, answer);
+    return answer;
+}
+
+```
