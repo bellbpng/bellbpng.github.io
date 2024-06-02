@@ -66,11 +66,11 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title"> ⭐Programming</span>
+        <span class="nav__sub-title"> 🚀Programming</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "C/C++" %}
-                        <li><a href="/categories/c_cpp" class="">🌕C/C++ ({{category[1].size}})</a></li>
+                        <li><a href="/categories/c_cpp" class="">🔴C/C++ ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -84,7 +84,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Object-Oriented Programming" %}
-                        <li><a href="/categories/oop" class="">🌕객체지향프로그래밍 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/oop" class="">☕객체지향프로그래밍 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
