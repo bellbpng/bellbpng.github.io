@@ -4,7 +4,7 @@ title:  "[2023년 회고] 임베디드 개발자 그리고 다음은? "
 excerpt: "retrospect"
 
 categories:
-  - retrospect/private
+  - no_visible
 # tags:
 #   - [ML, Python]
 
